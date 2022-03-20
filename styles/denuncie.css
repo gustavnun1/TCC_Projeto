@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity:0.7;
+
+
+}
+body{
+    background-image: linear-gradient(to right, purple, rgb(100, 127, 168));
+    font-family: Arial, Helvetica, sans-serif;
+   
+
+  
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(133, 25, 133);
+    height: 5vh;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+.logo{
+    font-size:50px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    position: absolute;
+    left: 5%;
+    top: -1%;
+    cursor: pointer;
+    font-weight: bold;
+}
