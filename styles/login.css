@@ -58,6 +58,24 @@ div{
     padding: 85px;
 
 }
+@media (max-width: 1200px){
+    p{
+        visibility: hidden;
+        
+    }
+    img{
+        visibility: hidden;
+    }
+    div{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+
+   
+}
 input{
     height: 50px;
     border-radius: 20px;

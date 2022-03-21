@@ -72,6 +72,30 @@ p{
     font-weight: bold;
 
 }
+@media (max-width: 1900px){
+   h1{
+       position: absolute;
+       top: 13%;
+       left: 80%;
+       transform: translate(-50%, -50%);
+       width: 100%;
+   }
+   p{
+       width: 100%;
+       
+   }
+   
+    
+    
+
+   
+}
+@media (max-width: 850px){
+    h1{
+        visibility: hidden;
+        font-size: 25px;
+    }
+ }
 
 .logo{
     font-size:50px;
