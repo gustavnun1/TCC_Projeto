@@ -46,6 +46,10 @@ body{
   
 
 }
+main{
+    align-items: center;
+    
+}
 div{
     background-color: rgba(180, 29, 175, 70);
     position: absolute;
@@ -122,6 +126,7 @@ img{
     margin-left: 90px;
     position: fixed;
     opacity: 0.3;
+   
     
 }
 .seta{
@@ -129,4 +134,18 @@ img{
     margin-top: 10%;
 }
 
+
+footer{
+    position: absolute;
+    top: 66%;
+    left: 78%;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+
+footer :hover{
+    color: #f2f2f3;
+}
     

@@ -31,6 +31,9 @@ ul{
     display: flex;
     flex-flow: row wrap;
 }
+li{
+    list-style-type: none;
+}
 
 body{
     background-image: linear-gradient(to right, purple, rgb(100, 127, 168));
@@ -52,7 +55,7 @@ h1{
 }
 span{
 font-size:200%; 
-color:rgb(17, 17, 17);
+color:rgb(0, 0, 0);
 }
 img{
     margin-top: -10%;

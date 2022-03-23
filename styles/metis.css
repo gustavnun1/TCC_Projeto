@@ -50,8 +50,14 @@ button{
 }
 
 
+@media (max-height: 1200px){
+.btn1{
+    margin-top: 1000px;
+}
 
-@media (max-width: 1500px){
+
+}
+@media (max-width: 1400px){
 
     .btn1{
         position: absolute;
@@ -81,7 +87,7 @@ button{
         visibility: hidden;
     }
     .titlenav3{
-        visibility: hidden;
+        margin-right: 20%;
     }
     .imagem12{
         top: 49%;
@@ -188,6 +194,7 @@ input{
     border: none;
     font-style: italic;
     font-weight: bold;
+    outline: none;
     
 }
 .imagemS{
