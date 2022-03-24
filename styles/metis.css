@@ -38,8 +38,8 @@ button{
     background-color: rgb(2, 2, 2);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    position: absolute;
-    top: 85%;
+    position: fixed;
+    top: 89%;
     left: 51%;
     color: rgb(255, 255, 255);    
     transform: translate(-50%, -50%);
@@ -50,13 +50,9 @@ button{
 }
 
 
-@media (max-height: 1200px){
-.btn1{
-    margin-top: 1000px;
-}
 
 
-}
+
 @media (max-width: 1400px){
 
     .btn1{
@@ -65,7 +61,7 @@ button{
         left: 51%;
         }
     .logo{
-        margin-left: 30%;
+        margin-left: -5%;
     } 
     .imagemS{
         visibility: hidden;
@@ -74,10 +70,11 @@ button{
         visibility: hidden;
     }
     .imagemE{
-        visibility: hidden;
+        margin: auto;
     }
     input{
-        visibility: hidden;
+        margin: auto;
+        width: 100px;
     }
     .titlenav1{
     
@@ -107,7 +104,7 @@ button{
     margin-top: 20px;
     position: absolute;
     left: 51%;
-    top: 10%;
+    top: 13%;
     transform: translate(-50%, -50%);
     font-style: italic;
     text-decoration: underline;
@@ -141,7 +138,7 @@ button{
    
     position: absolute;
     left: 51%;
-    top: 16%;
+    top: 19%;
     transform: translate(-50%, -50%);
     font-weight: 600;
     text-decoration: underline;

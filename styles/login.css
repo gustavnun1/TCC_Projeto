@@ -138,7 +138,7 @@ img{
 footer{
     position: absolute;
     top: 66%;
-    left: 78%;
+    left: 81%;
     font-size: 15px;
     font-style: italic;
     font-weight: 800;
@@ -149,3 +149,11 @@ footer :hover{
     color: #f2f2f3;
 }
     
+.nt1{
+    position: absolute;
+    top: 66%;
+    left: 74%;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 800;
+}
