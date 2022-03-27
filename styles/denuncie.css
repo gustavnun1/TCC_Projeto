@@ -16,7 +16,7 @@ a:hover {
 
 }
 body{
-    background-image: linear-gradient(to right, purple, rgb(100, 127, 168));
+    background-color: rgb(100, 127, 168);
     font-family: Arial, Helvetica, sans-serif;
    
 
@@ -29,8 +29,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(133, 25, 133);
-    height: 5vh;
+    background: rgb(224, 221, 224);
+    height: 8vh;
 }
 li{
     list-style-type: none;
@@ -57,12 +57,12 @@ p{
     letter-spacing:4px;
     position: absolute;
     left: 5%;
-    top: -1%;
+    top: 9px;
     cursor: pointer;
     font-weight: bold;
 }
 section{
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(250, 252, 247, 1);
     position: fixed ;
     top: 53%;
     left: 50%;
@@ -74,8 +74,8 @@ section{
     
 }
 [id = "input1"]{
-    background-color: black;
-    color: aliceblue;
+    background-color: rgba(250, 252, 247, 1);
+    color: rgb(5, 5, 5);
     font-weight: bold;
     font-style: italic;
     border-radius: 10px;
@@ -85,7 +85,7 @@ section{
     top: 21%;
     left: 35%;
     outline: none;
-    border: none;
+    
 }
 [id = "input2"]{
     background-color: rgb(148, 28, 128);

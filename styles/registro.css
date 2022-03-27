@@ -21,8 +21,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(133, 25, 133);
-    height: 5vh;
+    background: rgb(224, 221, 224);
+    height: 8vh;
     opacity: 1;
 }
 
@@ -35,7 +35,7 @@ li{
 }
 
 body{
-    background-image: linear-gradient(to right, purple, rgb(100, 127, 168));
+    background-color: rgb(100, 127, 168);
     font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
@@ -44,11 +44,11 @@ body{
     letter-spacing:4px;
     position: absolute;
     left: 5%;
-    top: -1%;
+    top: 9px;
     cursor: pointer;
 }
 div{
-    background-color: rgba(121, 12, 139, 70);
+    background-color: #E3EAE0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -60,57 +60,57 @@ div{
 
 }
 .usuario{
-    background-color: black;
+    background-color: #E3EAE0;
     position: absolute;
     top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 30px;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    
     outline: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 .email{
-    background-color: black;
+    background-color: #E3EAE0;
     position: absolute;
     top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 30px;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    
     outline: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 .senha{
-    background-color: black;
+    background-color: #E3EAE0;
     position: absolute;
     top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 30px;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    
     outline: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 .confirmar{
-    background-color: black;
+    background-color: #E3EAE0;
     position: absolute;
     top: 72%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 200px;
     height: 30px;
-    border-radius: 20px;
-    border: none;
+    border-radius: 10px;
+    
     outline: none;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 .pnome{
     position: absolute;
@@ -134,7 +134,7 @@ p{
 }
 button{
     font-size: 20px;
-    background-color: rgb(46, 148, 173);
+    background-color: rgba(77, 58, 58, 0.7);
     border: none;
     border-radius: 5px;
     padding: 20px;

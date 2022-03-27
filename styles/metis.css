@@ -16,40 +16,40 @@ a:hover {
 
 }
 body{
-    background-image: linear-gradient(to right, purple, rgb(100, 127, 168));
+    background-color: rgb(100, 127, 168);
     
 }
 .altura{
     height: 100%;
 }
 .imagem12{
-    height: 600px;
-    width: 600px;
+    height: 1000px;
+    width: 1000px;
     transform: translate(-50%, -50%);
     position: absolute;
-    max-width: 100%;
-    max-height: 100%;
+    
     
     top: 49%;
-    left: 50%;
+    left: 64%;
     
 }
 button{
-    background-color: rgb(2, 2, 2);
+    background-color: rgba(77, 58, 58, 0.6);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
-    position: fixed;
+    position: absolute;
     top: 89%;
     left: 51%;
-    color: rgb(255, 255, 255);    
+    color: rgb(243, 243, 243);    
     transform: translate(-50%, -50%);
     padding: 20px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
 }
-
-
+button :hover{
+    background-color:  rgb(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0))
+}
 
 
 
@@ -70,7 +70,7 @@ button{
         visibility: hidden;
     }
     .imagemE{
-        margin: auto;
+        margin-left: -2%;
     }
     input{
         margin: auto;
@@ -84,7 +84,7 @@ button{
         visibility: hidden;
     }
     .titlenav3{
-        margin-right: 20%;
+        margin-left: 1%;
     }
     .imagem12{
         top: 49%;
@@ -96,69 +96,54 @@ button{
     }
 
 .tela1{
-    color: aliceblue;
-    font-size: 75px;
+    color: rgb(247, 247, 247);
+    font-size: 90px;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 20px;
     position: absolute;
-    left: 51%;
+    left: 50%;
     top: 13%;
     transform: translate(-50%, -50%);
     font-style: italic;
-    text-decoration: underline;
-
-
-
-
-
-
-
-
-
-
-
-                                                                                         /* fundo gradiente */
-    background-image: linear-gradient(to right, #550347, #970a84);
-                                                                                        /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
-    background-clip: text;
-    -webkit-background-clip: text;
-                                                                                         /* a cor do texto deve estar como transparent */
-    color: transparent;
-    font-weight: bold
+   
 
 }
-.tela2{
-    color: aliceblue;
-    font-size: 12px;
+.textomain {
+    color: rgb(247, 247, 247);
+    font-size: 53px;
     display: flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
-   
+    font-weight: 500;
     position: absolute;
-    left: 51%;
-    top: 19%;
+    left: 28%;
+    top: 49%;
     transform: translate(-50%, -50%);
-    font-weight: 600;
-    text-decoration: underline;
-  
+    font-style: italic;
+    width: 39%  ;
+   
 
+}
 
-
-
-
-  /* fundo gradiente */
-    background-image: linear-gradient(to right, #0f0f0f, #1d1c1c);
-  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
-    background-clip: text;
-    -webkit-background-clip: text;
-  /* a cor do texto deve estar como transparent */
-    color: transparent;
+.titlefoot2{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: absolute;
+    left: 35%;
+    top: 41%;
+    position: absolute;
+} 
+.tituloCeap{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    position: absolute;
+    left: 60%;
+    top: 36%;
     
-
-
-
 }
 
 
@@ -167,27 +152,62 @@ button{
     text-transform:uppercase;
     letter-spacing:4px;
     position: absolute;
-    left: 13%;
-    top: 1%;
+    left: 12%;
+    top: 22px;
 }
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: purple;
-    height: 6vh;
+    background: rgb(224, 221, 224);
+    height: 8vh;
     
 }
-input{
+ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+li{
+    list-style-type: none;
+}
+footer{
+   position: absolute;
+   top: 110%;
+   left: 0%;
+   width: 100%;
+}
+ [id = abaixo]{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(224, 221, 224);
+    height: 12vh;
+    
+} 
+[id = lupin]{
+    transform: translate(-50%, -50%);
     position: absolute;
-    left: 60%;
-    top: 1%;
-    height: 30px;
-    width: 300px;
-    border-radius: 20px;
-    background-color: #0f0f0f;
-    color: #fffdfd;
+    left:1117px;
+    top: 34px;
+    border: none;
+    border-radius: 200px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+}
+[id = putin]{
+    position: absolute;
+    left: 40%;
+    top: 13px;
+    height: 45px;
+    width: 370px;
+    border-radius: 15px;
+    background-color: rgba(77, 58, 58, 0.5);
+    color: #000000;
     border: none;
     font-style: italic;
     font-weight: bold;
@@ -198,49 +218,27 @@ input{
     transform: translate(-50%, -50%);
     position: absolute;
     left: 2%;
-    top: 3%;
-    position: fixed;
+    top: 4%;
+    position: absolute;
 }
 .imagemF{
     transform: translate(-50%, -50%);
     position: absolute;
     left: 7%;
-    top: 3%;
-    position: fixed;
-}
-.imagemE{
-    transform: translate(-50%, -50%);
+    top: 4%;
     position: absolute;
-    left: 58%;
-    top: 3%;
 }
-.titlenav1{
-    
-    font-size:14px;
-    text-transform:uppercase;
-    letter-spacing: 4px;
-    position: absolute;
-    left: 92%;
-    top: 2%;
-    position: fixed;
-}
-.titlenav2{
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    position: absolute;
-    left: 79%;
-    top: 2%;
-    position: fixed;
-}
+
+
+
 .titlenav3{
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 4px;
     position: absolute;
-    left: 87%;
-    top: 2%;
-    position: fixed;
+    left: 95%;
+    top: 29px;
+    position: absolute;
 }
 .nav-list{
     list-style: none;

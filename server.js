@@ -18,7 +18,7 @@ server.get("/",function(req, res){
 });
 
 
-// 2 - Rota para pag projetos (/projetos)
+// 2 - Rota para pag login (/login)
 server.get("/login", function(req, res){
     return res.render("login.html", { login });
 });

@@ -21,8 +21,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(133, 25, 133);
-    height: 5vh;
+    background: rgb(224, 221, 224);
+    height: 8vh;
 }
 
 ul{
@@ -35,11 +35,11 @@ ul{
     letter-spacing:4px;
     position: absolute;
     left: 5%;
-    top: -1%;
+    top: 8px;
     cursor: pointer;
 }
 body{
-    background-image: linear-gradient(to right, purple, rgb(100, 127, 168));
+    background-color: rgb(100, 127, 168);
     font-family: Arial, Helvetica, sans-serif;
    
 
@@ -51,15 +51,15 @@ main{
     
 }
 div{
-    background-color: rgba(180, 29, 175, 70);
+    background-color: rgba( 227, 234, 224, 51);
     position: absolute;
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
-    padding: 60px;
-    border-radius: 40px;
+   
+    border-radius: 20px;
     color: rgb(255, 240, 252);
-    padding: 85px;
+    padding: 110px;
 
 }
 @media (max-width: 1200px){
@@ -82,7 +82,7 @@ div{
 }
 input{
     height: 50px;
-    border-radius: 20px;
+    border-radius: 5px;
     border: none;
     background-color: rgb(255, 255, 255);
     color: rgb(8, 8, 8);
@@ -96,39 +96,22 @@ button{
     background-color: black;
     color: aliceblue;
     cursor: pointer;
-}
+}   
 h1{
     left: 70%;
+    color: black;
 }
 p{
     position: absolute;
-    top: 11%;
+    top: 31%;
     left: 4%;
     font-size: 60px;
     font-style: italic;
     font-weight: 800;
-    color: aliceblue;
-    
-  /* fundo gradiente */
-  background-image: linear-gradient(to right, #ffffff, #3a88e2);
-  /* agora colocamos o fundo gradiente dentro do texto com essa propriedade */
-    background-clip: text;
-    -webkit-background-clip: text;
-  /* a cor do texto deve estar como transparent */
-    color: transparent;
-    
-    
+    color: rgb(0, 0, 0);
+ 
 }
-img{
-    margin-top: 225px;
-    max-height: 800px;
-    max-width: 800px;
-    margin-left: 90px;
-    position: fixed;
-    opacity: 0.3;
-   
-    
-}
+
 .seta{
     margin-left: 10%;
     margin-top: 10%;
@@ -146,7 +129,7 @@ footer{
 
 
 footer :hover{
-    color: #f2f2f3;
+    color: #5f5fd3;
 }
     
 .nt1{
