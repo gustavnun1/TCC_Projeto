@@ -21,7 +21,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(224, 221, 224);
+    background: rgba(224, 221, 224, 1.0);
     height: 8vh;
 }
 
@@ -46,18 +46,25 @@ body{
   
 
 }
-main{
-    align-items: center;
+.imglogin{
+    height: 1000px;
+    width: 1000px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    opacity: 0.05;
+
+    top: 52%;
+    left: 45%;
     
 }
+
 div{
     background-color: rgba( 227, 234, 224, 51);
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 80%;
     transform: translate(-50%, -50%);
-   
-    border-radius: 20px;
+    border-radius: 3px;
     color: rgb(255, 240, 252);
     padding: 110px;
 
@@ -67,9 +74,7 @@ div{
         visibility: hidden;
         
     }
-    img{
-        visibility: hidden;
-    }
+    
     div{
         position: absolute;
         top: 50%;
@@ -98,7 +103,6 @@ button{
     cursor: pointer;
 }   
 h1{
-    left: 70%;
     color: black;
 }
 p{
@@ -119,7 +123,7 @@ p{
 
 
 footer{
-    position: absolute;
+    position: fixed;
     top: 66%;
     left: 81%;
     font-size: 15px;
@@ -133,7 +137,7 @@ footer :hover{
 }
     
 .nt1{
-    position: absolute;
+    position: fixed;
     top: 66%;
     left: 74%;
     font-size: 15px;

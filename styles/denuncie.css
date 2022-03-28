@@ -85,10 +85,11 @@ section{
     top: 21%;
     left: 35%;
     outline: none;
+  
     
 }
 [id = "input2"]{
-    background-color: rgb(148, 28, 128);
+    background-color: rgb(121, 103, 103);
     color: aliceblue;
     font-weight: bold;
     font-style: italic;
@@ -96,7 +97,7 @@ section{
     height: 40px;
     width: 130px;
     position: absolute;
-    top: 77%;
+    top: 83%;
     left: 43%;
     outline: none;
     border: none;
@@ -149,10 +150,11 @@ section{
 
 
 textarea{
-    background-color: black;
-    color: aliceblue;
+    background-color:  rgba(250, 252, 247, 1);
+    color: rgb(0, 0, 0);
     outline: none;
-    border: none;
+    border: 1;
     resize: none;
     border-radius: 10px;
+    font-size: 16px;
 }

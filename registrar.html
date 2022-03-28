@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/registro.css">
+    <script src="./main.js"></script>
     <title>Registrar</title>
 </head>
 <body>
@@ -43,23 +44,25 @@
             <br><br>
 
             <input class = "email" id = "inpemail" 
-            type="text" name="email1" placeholder=" E-mail">
+            type="email" placeholder=" E-mail" pattern=".+@globex\.com" size="30" required>>
             <br><br>
 
             <p class="psenha" id = "meupsenha"> Digite sua senha</p>
             <br><br>
 
             <input class = "senha" id = "inpsenha" 
-             type="text" name="senha1" placeholder=" Senha">
+             type="password"minlength = "8" placeholder=" Senha">
             <br><br>
 
-            <p class="pconf" id = "meupconf"> Repita sua senha</p>
+            <p class="pconf" id = "ConfirmarSenha"> Repita sua senha</p>
             <br><br>
         
             <input class = "confirmar" id = "inpconfirmar" 
-             type="text" name="senha2" placeholder=" Repita sua senha">
+             type="password"minlength = "8"  placeholder=" Repita sua senha">
             <br><br>
-            <button class id = "entrar"> Registrar </button>
+
+
+            <button id = "button" onclick= "enviarTexto = ('button');" > Registrar </button>
     
         </div>
     </main>

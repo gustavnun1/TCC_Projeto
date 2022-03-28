@@ -23,14 +23,14 @@ body{
     height: 100%;
 }
 .imagem12{
-    height: 1000px;
+    height: 900px;
     width: 1000px;
     transform: translate(-50%, -50%);
     position: absolute;
     
     
-    top: 49%;
-    left: 64%;
+    top: 51%;
+    left: 50%;
     
 }
 button{
@@ -38,7 +38,7 @@ button{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     position: absolute;
-    top: 89%;
+    top: 90%;
     left: 51%;
     color: rgb(243, 243, 243);    
     transform: translate(-50%, -50%);
@@ -180,7 +180,7 @@ footer{
  [id = abaixo]{
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(224, 221, 224);
     height: 12vh;
@@ -199,19 +199,34 @@ footer{
     height: 25px;
     width: 25px;
 }
-[id = putin]{
+.searchText{
     position: absolute;
-    left: 40%;
+    left: 41%;
     top: 13px;
     height: 45px;
     width: 370px;
     border-radius: 15px;
     background-color: rgba(77, 58, 58, 0.5);
-    color: #000000;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+[id = "putin"]{
+    color: #e2dada;
     border: none;
     font-style: italic;
     font-weight: bold;
-    outline: none;
+    outline: none; 
+    background: none;
+    width: 100%;
+    padding: 0;
+    line-height: 40px;
+    font-size: 16px;
+    
+}
+[id = "lupa"]{
+    height: 20px;
+    width: 20px;
     
 }
 .imagemS{
