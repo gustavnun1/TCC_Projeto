@@ -53,6 +53,7 @@ button :hover{
 
 
 
+
 @media (max-width: 1400px){
 
     .btn1{
@@ -162,6 +163,7 @@ nav{
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(224, 221, 224);
     height: 8vh;
+    width: 100%;
     
 }
 ul{
@@ -201,8 +203,9 @@ footer{
 }
 .searchText{
     position: absolute;
-    left: 41%;
-    top: 13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 4%;
     height: 45px;
     width: 370px;
     border-radius: 15px;
@@ -210,6 +213,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     display: flex;
+    
 }
 [id = "putin"]{
     color: #e2dada;
@@ -222,6 +226,7 @@ footer{
     padding: 0;
     line-height: 40px;
     font-size: 16px;
+    
     
 }
 [id = "lupa"]{
@@ -242,6 +247,7 @@ footer{
     left: 7%;
     top: 4%;
     position: absolute;
+    cursor: pointer;
 }
 
 
