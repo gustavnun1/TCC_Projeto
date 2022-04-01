@@ -8,86 +8,117 @@
     <script src="./server.js"></script>
     <title>Métis - Nós faremos a sua segurança</title>
 <head>
-    
+<body>  
 <header>
-    <nav>
+    <nav class = "nav-site">
+       
+            <ul class="menu">
+               
+	  		        <li><a href="#">Menu</a>
+                        <ul>
+                            <li><a href="./suporte.html">Suporte</a></li>
+                            <li><a href="./sobrenos.html">Sobre Nós</a></li>
+                            <li><a href="./registrar.html">Registre-se</a></li>
+                            <li><a href="./login.html">Login</a></li>
+                        </ul>
+            </ul>
+       
         <a class="logo" href="./metis.html">Métis</a>
-
-               <div class="images" href="">
-                    <ul class = "nav-list">
-                        <li>
-                            <div class = "imagemF">
-                            <img src="https://cdn-icons-png.flaticon.com/512/5463/5463457.png">
-                            <a href="#"> </a>
-                            </div>
-                        </li>
+        <ul class="menu-dropdown">
+            <li class="md-item">
+                <a href="">&nbsp;00</a>
+                <ul class="submenu-dropdown">
+                    <li class="sd-item">
+                        <a href="">Sem notificações </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+                <ul class = "nav-list">
+                    <li>
+                        
+                        <div class = "imagemS">
+                        <img src="https://cdn-icons-png.flaticon.com/512/5463/5463457.png">
+                        <a href="#"> </a>
+                        </div>
+                    </li>
     
-                        <li>
-                            <div class = "imagemS" >
-                                <img src="https://cdn-icons-png.flaticon.com/512/60/60510.png">
-                                <a href="/"> </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class = "titlenav3">
-                            <a href="./login.html">Login </a>
-                            </div>
-                        </li>
-                        <li>
-                           <div class = "searchText">
-                                <input id = "putin" type="text" name="Digite" placeholder=" Digite a área que deseja procurar">
-                                <a href="#">
-                                <img id = "lupa" src="./loupe (1).png" alt = "Lupa">
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-               </div>
+                    <li>
+                        <div class = "imagemH" >
+                            <img src="https://cdn-icons-png.flaticon.com/512/60/60510.png">
+                            <a href="/"> </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "tituloLogin">
+                        <a href="./login.html">Login </a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class = "tituloSuporte">
+                        <a href="./suporte.html">Suporte </a>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class = "searchText">
+                            <input id = "inputSearch" type="text" name="Digite" placeholder=" Digite a área que deseja procurar">
+                            <a href="#">
+                            <img id = "lupa" src="./imgs/loupe (1).png" alt = "Lupa">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+               
     </nav>
+  
 </header>
-    <main>
-        
-      
-            <img src="imagem12.svg" class = "imagem12" alt="emergencia"> 
-                <div
-                    class = "altura">
-                </div>
-            <a href="./denuncie.html">
-                <button>Denuncie Ja</button>
-            </a> 
-        <div class = "tela1">
+
+
+<div id = "container">
+    <main id="content">
+        <div class = "H1">
             <p>
                 Métis 
             </p>
         </div>
-     
+        <img src="./imgs/imagem12.svg" class = "imagem12" alt="emergencia"> 
+        <div
+            class = "altura">
+        </div>
+        <a href="./denuncie.html">
+            <button>Denuncie Ja</button>
+        </a> 
     </main>
-<body>
+
+
  
-<footer>
-         <nav id="abaixo">
-             <ul>
+<footer>   
+             <ul id="foot-content">
                  <li>
-                    <div class = "titlefoot2" >
+                    <div class = "tituloSobre" >
                         <a href="./sobrenos.html"> Sobre nós </a>
                     </div>  
                 </li>
                 <li>
-                    <div class = "imgInsta" href="/">
+                    <div class = "imgInsta">
+                        <a href="#"> 
                         <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
-                        <a href="/"> </a>
+                        <a href="#"> </a>
                     </div>
                 </li>
                 <li>
-                    <div class = "imgFB" href="/">
+                    <div class = "imgFB">
+                        <a href="#"> 
                         <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
-                        <a href="/"> </a>
+                        </a>
                     </div>
                 </li>
                 <li>
-                    <div class = "imgSup" href="/">
+                    <div class = "imgSup">
+                        <a href="#"> 
                         <img src=" https://cdn-icons-png.flaticon.com/512/7145/7145656.png">
-                        <a href="/"> </a>
+                        </a>
                     </div>
                 </li>
                 <li>
@@ -96,7 +127,8 @@
                     </div>  
                 </li>
             </ul>
-        </nav>
+    
 </footer>
+</div>
 </body>
 </html>

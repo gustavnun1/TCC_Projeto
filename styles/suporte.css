@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity:0.7;
+
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(224, 221, 224, 1.0);
+    height: 8vh;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+body{
+    background-color: rgb(100, 127, 168);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+footer{
+    background-color:  rgb(255, 240, 252);
+    
+    height: 150px;
+   
+    grid-area: f;
+}
+header{
+   
+    grid-area: h;
+}
+main{
+   
+    grid-area: m;
+}
+button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+   
+    
+}
+
+
+
+.logo{
+    font-size:50px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    position: absolute;
+    left: 5%;
+    top: 8px;
+    cursor: pointer;
+}
+.imgSuporte{
+    height: 1000px;
+    width: 1100px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    opacity: 0.03;
+
+    top: 52%;
+    left: 50%;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50vh ;
+    grid-template-rows: 10vh 80vh 30vh;
+    grid-template-areas: "h h"
+                          "m m"
+                          
+                          "f f";
+   
+
+}
+.pinture1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 30%;
+    cursor: pointer;
+    padding: 100px;
+}
+.pinture2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 70%;
+    cursor: pointer;
+    padding: 100px;
+}
+
+.pinture1:hover h1{
+    padding: 5px;
+    transition: 1s;
+    
+}
+
+
+.pinture2:hover h1{
+    padding: 5px;
+    transition: 1s;
+   
+}
+
+.pinture1:hover p{
+    padding: 1px;
+    transition: 1s;
+    position: static;
+   
+}
+.pinture2:hover p{
+    padding:1px;
+    transition: 1s;
+    position: static;
+}
+p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: 100;
+    position: absolute;
+    left: -1%;
+    font-weight: bolder;
+    color: rgb(100, 127, 168);
+}
