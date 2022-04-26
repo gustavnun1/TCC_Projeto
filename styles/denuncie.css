@@ -15,18 +15,22 @@ a:hover {
 
 
 }
-body{
-    background-color: rgb(100, 127, 168);
-    font-family: Arial, Helvetica, sans-serif;
-   
-
-  
-
+.logo{
+    font-size: 32px;
+    text-transform: uppercase;
 }
-
+#container{
+    display: flex;
+    justify-content: center;
+    
+}
+body{
+    background-image: linear-gradient( to right, rgb(136, 45, 211), rgb(158, 120, 194) );
+    font-family: sans-serif;
+}
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(224, 221, 224);
@@ -39,126 +43,32 @@ ul{
     display: flex;
     flex-flow: row wrap;
 }
-h1{
-    font-size: 40px;
-    position: absolute;
-    top: 12%;
-    left: 7%;
-    color: black;
-}
-p{
-    font-size: 35px;
-    font-weight: bold;
-    color: black;
-}
-.logo{
-    font-size:50px;
-    text-transform:uppercase;
-    letter-spacing:4px;
-    position: absolute;
-    left: 5%;
-    top: 9px;
-    cursor: pointer;
-    font-weight: bold;
-}
-section{
-    background-color: rgba(250, 252, 247, 1);
-    position: fixed ;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 200px;
-    border-radius: 40px;
-    color: rgb(255, 240, 252);
-    text-align: center;
+form{
+    margin-top: 40%;
     
 }
-[id = "input1"]{
-    background-color: rgba(250, 252, 247, 1);
-    color: rgb(5, 5, 5);
-    
-    font-style: italic;
-    border-bottom: 1px solid  ;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    height: 30px;
-    width: 300px;
-    position: absolute;
-    top: 21%;
-    left: 35%;
-    outline: none;
-  
-    
-}
-[id = "input2"]{
-    background-color: rgb(121, 103, 103);
-    color: aliceblue;
-    font-weight: bold;
-    font-style: italic;
-    border-radius: 5px;
-    height: 40px;
-    width: 130px;
-    position: absolute;
-    top: 83%;
-    left: 43%;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    
-    
-}
-
-@media (max-width: 783px){
-    section{
-        padding: 40%;
-        
-
-    }
-    textarea{
-        padding: 1%;
-    }
-    h1{
-        padding: 2%;
-        width: 80%;
-        position: absolute;
-        top: 11%;
-        left: 9%;
-        font-size: 20px;
-    }
-
-    p{
-        padding: 2%;
-        width: 80%;
-        position: absolute;
-        top: 30%;
-        left: 9%;
-        font-size: 20px;
-    }
-
-    [id = "input1"]{
-        position: absolute;
-        top: 15%;
-    }
-     
-}
-
-
-@media (max-width: 1800px){
-    [id = "input1"]{
-        position: absolute;
-        top: 25%;
-    }
-}
-
-
-textarea{
-    background-color:  rgba(250, 252, 247, 1);
+label{
+    font-size: 28px;
+    font-weight: 600;
     color: rgb(0, 0, 0);
+}
+
+input[type=text]{
+    height: 50px;
+    width: 300px;
+    border: none;
     outline: none;
-    border: 1;
-    resize: none;
-    border-top: none;
-    border-bottom: none;;
-    font-size: 16px;
+    margin-left: 26%;
+    border-radius: 15px;
+    
+}
+
+input[type=submit]{
+    background: none;
+    border: none;
+    font-size: 42px;
+    cursor: pointer;
+    margin-left: 7%;
+    
+    
 }

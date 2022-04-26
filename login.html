@@ -9,7 +9,7 @@
 </head>
 <header>
     <nav>
-        <a class="logo" href="./metis.html"> ← </a>
+        <a class="logo" href="./metis.html"> métis </a>
 
                <div class="images" href="/">
                     <ul class = "nav-list">
@@ -25,28 +25,32 @@
 
 <main>
 <body>
-    <img src="./imgs/login.svg" class = "imglogin" alt="loginimg"> 
-    <p>
-        Faça login para validarmos sua denuncia
-        <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Colabore com nossa comunidade!
-    </p>
-    <div class = "tela">
-        <h1>
-            &nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;
-        </h1>
-        <br>
-        <input type="text" name="usuario1" placeholder="  Nome de usuario ">
-        <br><br>  
-        <input type="text" name="usuario2" placeholder="   Senha">
-        <br><br>
-        <button class id = "entrar"> Entrar </button>
-
+    <div id = "container">
+         
+        
+        <div id = "box_login">
+            <form action="">
+                <a class = "text_login">Login</a>
+                    <br><br>
+                <input type="number" placeholder = "  CPF"  max="9" id="lbCPF" name="cpf">
+                      <br><br>
+                <input type="password" name="senha" placeholder="  Senha">
+                        <br><br>
+                <input class = "btEnviar_login" type="submit" value="Entrar">
+                        <br><br>
+                <a href = "registrar.html" target="blank">Não tem cadastro? <span>Registre-se</span></a>
+            </form>
+        </div>
+        
+        <p>
+            Faça login para validarmos sua denuncia, colabore com nossa comunidade!
+        </p>
     </div>
-  
 </main>
-<footer>
-    <a  id = "footer" href = "./registrar.html"> &nbsp;Registre-se</a> 
-</footer>
-    <a class="nt1" id = "NãoTem">Não tem cadastro? </a>
+
+
+
+
+<footer></footer>
 </body>
 </html>

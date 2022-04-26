@@ -11,8 +11,7 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="./login.html"> ← </a>
-    
+            <a class="logo" href="./metis.html"> ← </a>
                    <div class="images" href="/">
                         <ul class = "nav-list">
                             <li>
@@ -24,52 +23,34 @@
                     </div>
         </nav>
     </header>
-
-
-
-
+<div id = "container">
+    <div id = "parte_esquerda">
+        <img id = "imgRegistro"src="./imgs/imgRegistro.svg" alt="imgRegistro">
+    </div>
 
     <main>
         <div class = "tela">
-            <p class="pnome" id = "meupnome">
-                Escolha seu nome de usuario
-            </p>
-
-            <br>
-            <input class = "usuario" id = "inpusuario"
-            type="text" name="usuario1" placeholder="  Nome de usuario ">
-            <br><br>  
-
-            <p class="pemail" id = "meupemail"> Digite um e-mail valido</p>
-            <br><br>
-
-            <input class = "email" id = "inpemail" 
-            type="email" placeholder=" E-mail" pattern=".+@globex\.com" size="30" required>>
-            <br><br>
-
-            <p class="psenha" id = "meupsenha"> Digite sua senha</p>
-            <br><br>
-
-            <input class = "senha" id = "inpsenha" 
-             type="password"minlength = "8" placeholder=" Senha">
-            <br><br>
-
-            <p class="pconf" id = "ConfirmarSenha"> Repita sua senha</p>
-            <br><br>
-        
-            <input class = "confirmar" id = "inpconfirmar" 
-             type="password"minlength = "8"  placeholder=" Repita sua senha">
-            <br><br>
-
-
-            <button id = "button" onclick= "enviarTexto = ('button');" > Registrar </button>
-    
+                <form id ="form1"action="">
+                        <br><br><br>
+                        <input type="text" placeholder = "Nome" id="lbname" name="fname"><br><br>
+                        <input type="text" placeholder = "E-mail"id="lbemail" name="email"><br><br>
+                        <input type="number" placeholder = "CPF"  max="9" id="lbCPF" name="cpf"><br><br>
+                        <input type="date" placeholder = "dd/mm/aa" id="lbddn" name="ddn"><br><br>
+                        <input type="text" placeholder = "Username" id="lbuser" name="username"><br><br>
+                        <input type="password" placeholder = "Senha" id="lbsenha" name="fname"><br><br>
+                        <input type="password" placeholder = "Confirme sua senha" id="fname" name="fname"><br><br>                                   
+                        <input class = "btEnviar" type="submit" value="Cadastrar">
+                        <br><br>
+                        <a class = "a_login" href="./login.html">Já possui uma conta? Entre aqui</a>
+                    </form>
+                </form>           
         </div>
     </main>
+</div>
 
 
 
-    <footer></footer>
-    
+
+<footer></footer> 
 </body>
 </html>

@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/sobrenos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;600;900&display=swap" rel="stylesheet">
     <title>Sobre Nós</title>
 
 </head>
 <header>
-    <nav>
+    <nav id = "navbar">
         <a class="logo" href="./metis.html"> ← </a>
-
            <div class="images" href="/">
                 <ul class = "nav-list">
                     <li>
@@ -20,63 +20,66 @@
                         </div>
                     </li>
                 </ul>
-            </div>
-
-            
+            </div>        
     </nav>
 </header>
+<div id = "container">
 <body>
-    <main></main>
-        <img class = "programadorImg" src="./imgs/program.svg" alt="programador">
-        <h1><span>Q</span>uem somos nós?</h1>
-
-        <p><a class = "text2">Se sente com falta de segurança em seu próprio bairro e está procurando uma solução para seu problema? Relaxe, nós estamos aqui!</a></p>
-        
-        <p><a class = "text1"><span>M</span>étis é um projeto criado para ajudar a população, entre as mais perigosas e mais seguras áreas. Aqui, você pode estar verificando as áreas atuais com mais crime perto de sua casa, protegendo você e seus familiares, a se sentirem seguros ao sair nas ruas novamente.</a> 
-        
-        <br><br> 
-        
-        <span class = "colaborar">  E como você pode colaborar conosco? </span> 
-        
-        <br><br>
-        
-        <a class = "text3"> De varias formas! Como, dizer qual lugar é o mais perigoso em seu bairro pelo nosso mapa, ou até mesmo nos ajudando financeiramente pelo nosso sistema de suporte, toda ajuda é valida! <br><br> Estamos Trabalhando Por Você</p></a>
-        
+    <main>
+            <img class = "logoMetis" src="./imgs/logoMetis.png" alt="logoMetis">
+        <div id = "content">
+            <h1><span>Q</span>uem somos nós?</h1>
     </main>
-    
 </body>
-<footer>
-    <nav id="abaixo">
-        <ul>
-            <li>
-               <div class = "titlefoot2" >
-                   <a href="./sobrenos.html"> Sobre nós </a>
-               </div>  
-           </li>
-           <li>
-               <div class = "imgInsta" href="/">
-                   <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
-                   <a href="/"> </a>
-               </div>
-           </li>
-           <li>
-               <div class = "imgFB" href="/">
-                   <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
-                   <a href="/"> </a>
-               </div>
-           </li>
-           <li>
-               <div class = "imgSup" href="/">
-                   <img src=" https://cdn-icons-png.flaticon.com/512/7145/7145656.png">
-                   <a href="/"> </a>
-               </div>
-           </li>
-           <li>
-               <div class = "tituloCeap" >
-                   <a href="https://ceappedreira.org.br/" target="_blank"> CEAP </a>
-               </div>  
-           </li>
-       </ul>
-   </nav>
+</div>
+<section id ="panel">
+    
+    <div class = "bloco1">
+        <br><br><br>
+        <a class = "text1">Se sente com falta de segurança em seu próprio bairro e está procurando uma solução para seu problema? Relaxe, nós estamos aqui!</a>   
+        <img id = "gif_PR"src="./imgs/program.svg" alt="programador_tela">
+        <h3 class = "colaborar">  E como você pode colaborar conosco? </h3> 
+        <br><br><br><br>
+        <a class = "text3"> De varias formas! Como, dizer qual lugar é o mais perigoso em seu bairro pelo nosso mapa, ou até mesmo nos ajudando financeiramente pelo nosso sistema de suporte, toda ajuda é valida!</a>
+        <br><br>
+        <a class = "footer_text">Estamos Trabalhando Por Você!</a>
+    </div>
+
+    <div class = "bloco2">
+        <p><a class = "text2"><span>M</span>étis é um projeto criado para ajudar a população, entre as mais perigosas e mais seguras áreas. Aqui, você pode estar verificando as áreas atuais com mais crime perto de sua casa, protegendo você e seus familiares, a se sentirem seguros ao sair nas ruas novamente.</a> 
+    </div>
+
+</section>
+<footer id = footer>   
+    <ul id="foot-content">
+        <li>
+            <div class = "tituloSobre" >
+                <a href="./sobrenos.html"> Sobre nós </a>
+            </div>  
+        </li>
+        <div id = foot-images>
+        <li>
+                <a class = "iconeInstagram" href="https://www.instagram.com/metisecure/" target="blank"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
+                </a>
+        </li>
+        <li>
+                <a class = "iconeFacebook" href="#"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
+                </a>
+        </li>
+        <li>                     
+                <a class = "iconeSuporte" href="./suporte.html"> 
+                <img src=" https://cdn-icons-png.flaticon.com/512/7145/7145656.png" target="blank">
+                </a>                      
+        </li>
+        </div>
+        <li>
+            <div class = "tituloCeap" >
+                <a href="https://ceappedreira.org.br/" target="_blank"> CEAP </a>
+            </div>  
+        </li>
+    </ul>
+
 </footer>
 </html>
