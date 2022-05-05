@@ -17,7 +17,9 @@ a:hover {
 }
 .a_login{
     margin-left: 12%;
-    color: rgb(168, 64, 216);
+}
+.a_login:hover{
+    color: blueviolet;
 }
 body{
     font-family: sans-serif;
@@ -25,7 +27,7 @@ body{
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background: rgb(224, 221, 224);
@@ -42,11 +44,9 @@ li{
 }
 
 .logo{
-    font-size:50px;
+    font-size:30px;
     text-transform:uppercase;
     letter-spacing:4px;
-    position: absolute;
-    margin-right: 90%;
     cursor: pointer;
 }
 #container{
@@ -61,6 +61,10 @@ input{
     height: 80px;
     width: 400px;
 }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
 .btEnviar{
     border-bottom: none;
     font-size: 20px;
@@ -68,9 +72,11 @@ input{
     cursor: pointer;
 }
 #parte_esquerda{
-    background-image: linear-gradient(rgb(136, 45, 211), rgb(163, 120, 204));
+    background-image: url("../imgs/fundo_tela.png");
     margin-left: -14%;
-    width: 110vh;
+    width: 101vh;
+    background-repeat: no-repeat;
+    
 }
 #imgRegistro{
     height: 700px;
@@ -79,15 +85,16 @@ input{
     margin-top: 15%;
 }
 .tela{
-    margin-left: -89%;
-    border: solid;
+    margin-left: -89%;    
     height: 93vh;
-    border-top: none;
-    border-right: none;
-    border-bottom: none;
+
     
 }
 
 #form1{
     margin-left: 20%;
 }
+
+
+
+

@@ -5,9 +5,9 @@
 }
 .logo{
     color: black;
-    font-size: 80px;
-    margin-right: 80%;
-    margin-top: -1%;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 
 a{
@@ -35,7 +35,7 @@ h1:hover{
 #navbar{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     height: 8vh;
     background-color: rgb(240, 233, 233);
 }
@@ -43,7 +43,7 @@ body{
     background-color: rgb(27, 2, 83);
     font-family: sans-serif;
 }
-.logoMetis{
+#logoMetis{
     height: 500px;
     width: 600px;
     margin-top: 4%;
@@ -150,4 +150,16 @@ li{
     
     color: black;
     font-weight: 600;
+}
+
+/*-------------------RESPONSIVIDADE*----------------*/
+
+@media (max-widht:750px){
+
+    #logoMetis{
+        margin-right: 50%;
+    }
+    h1{
+        font-size: 12px;
+    }
 }
