@@ -40,8 +40,11 @@ h1:hover{
     background-color: rgb(240, 233, 233);
 }
 body{
-    background-color: rgb(27, 2, 83);
+    background-image: linear-gradient( to right, rgb(175, 175, 170), rgb(131, 133, 105) );
     font-family: sans-serif;
+}
+body::-webkit-scrollbar {
+    display: none;  
 }
 #logoMetis{
     height: 500px;
@@ -51,7 +54,7 @@ body{
 }
 #foot-content{
     display: flex;
-    background-color: rgb(240, 233, 233);
+    background-color: rgb(224, 220, 220);
     height: 10vh;
     align-items: center;
     justify-content: space-around;
@@ -92,10 +95,10 @@ li{
 #panel{
     background-color: aliceblue;
     margin-top: 10%;
-    height: 300vh;
+    height: 330vh;
     font-family: 'Kufam';
     display: flex;
-    
+    background-color: rgb(240, 233, 233);
 }
 .bloco1{
     width: 60%;
@@ -129,13 +132,13 @@ li{
     font-size: 80px;
     width: 100vw;
     margin-left: -9%;
-    margin-top: 57%;
+    margin-top: 31%;
     color: rgb(255, 255, 255);
     font-weight: 600;
     
 }
 h3{
-    background-color: rgb(27, 2, 83);
+    background-image: linear-gradient( to right, rgb(175, 175, 170), rgb(131, 133, 105) );
     width: 400px;
     height: 170px;
     display: flex;
