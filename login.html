@@ -7,44 +7,39 @@
     <link rel="stylesheet" href="./styles/login.css">
     <title>Login</title>
 </head>
+<body>
 <header>
     <nav>
         <a class="logo" href="./metis.html"> The Way </a>
-
-               <div class="images" href="/">
-                    <ul class = "nav-list">
-                        <li>
-                            <div class = "seta" ←>
-                            <a href=""> </a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-    </nav> 
+        <div class="images" href="/">
+            <ul class="nav-list">
+                <li>
+                    <div class="seta">
+                        <a href=""></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <main>
-<body>
-    <div id = "container">
-         
-        
-        <div id = "box_login">
+    <div id="container">
+        <div id="box_login">
             <form action="">
-                <a class = "text_login">Login</a>
-                    <br><br>
-                <input type="number" placeholder = "  CPF"  max="9" id="lbCPF" name="cpf">
-                      <br><br>
+                <a class="text_login">Login</a>
+                <br><br>
+                <input type="number" placeholder="  CPF" max="9" id="lbCPF" name="cpf">
+                <br><br>
                 <input type="password" name="senha" placeholder="  Senha">
-                        <br><br>
-                <input class = "btEnviar_login" type="submit" value="Entrar">
-                        <br><br>
-                <a href = "registrar.html" target="blank">Não tem cadastro? <span>Registre-se</span></a>
+                <br><br>
+                <input class="btEnviar_login" type="button" value="Entrar" id="btLogin">
+                <br><br>
+                <a href="registrar.html" target="_blank">Não tem cadastro? <span>Registre-se</span></a>
             </form>
-        </div> 
+        </div>
     </div>
 </main>
-
-
-
-
 <footer></footer>
+<script src="./scripts/login.js"></script>
 </body>
 </html>

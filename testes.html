@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/metis.css">
+    <link rel="stylesheet" href="./styles/testes.css">
     <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@400;600;900&display=swap" rel="stylesheet">
     <script src="./server.js"></script>
     <title>The Way - Estude do seu jeito!</title>
 <head>
+<script>
+    // Verifica se o usuário está autenticado
+    document.addEventListener("DOMContentLoaded", () => {
+        // Substitua 'isLoggedIn' pelo método usado para verificar se o usuário está logado
+        // Aqui usamos o localStorage como exemplo
+        const isLoggedIn = localStorage.getItem("isLoggedIn");
+    
+        // Se não estiver logado, redireciona para a página de login
+        if (!isLoggedIn) {
+            window.location.href = "./login.html";
+        }
+    });
+</script>   
 <body>  
     <div class = "container"></div>
     <header>
@@ -41,48 +54,13 @@
         </nav>
     
     </header>
-
-
-
-    <main id="content">
-        <div>
-            <h1 class = textoMain>
-                Descubra a melhor forma de aprender, conheça a TheWay
-            </h1>
-            <br>
-            <p class = "legendaMain">
-                Uma plataforma de estudos digitais, que se adapta ao usuário!
-            </p>          
-        </div>
-    </main>
  
-    <section>
-        <div id = "panel_sec">
-            <div class = "text_panel">
-                O melhor método para estudar? 
-                <br> 
-                Deixe nós descobrirmos para você, 
-                <br>
-                faça o teste de aprendizado!  
-                <a id = "btnDenuncia"href="./testes.html">
-                <br>
-                    <button id="btn1">Método</button>
-                </a>             
-            </div> 
-            <div id = "opcPainel"> 
-                    <div id = "botao1">
-                        <button id="btn2"><p id="pBt2">Deseja ser uma escola parceira? <br> Fale conosco </p></button>                             
-                    </div>
-                    <div id = "botao2">
-                        <button id="btn3"><p id = "pBt3" >Seja um professor independente e <br> divulgue seus conteúdos aqui </p></button>                                
-                    </div>   
-            </div> 
-        </div>
-    </section>
-
-    
-
-
+    <main id="main">
+        <section>
+             
+        </section>
+    </main>
+  
 
     <footer id = footer>   
                 <ul id="foot-content">

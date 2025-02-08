@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+
+    padding: 0;
+}
+
+#nav-site a{
+    color: rgb(109, 19, 117);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    letter-spacing:4px;
+}
+#foot-content a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+    font-family: sans-serif;
+    text-transform:uppercase;
+    letter-spacing:4px;
+}
+
+a:hover {
+    opacity:0.7;
+
+
+}
+#nav-site .logo{
+    font-size: 30px;
+    margin-left: 7%;
+}
+body{
+    background-color: rgb(240, 233, 233);
+}
+body::-webkit-scrollbar {
+    display: none;  
+}
+.container{
+   display: flex;
+   align-items: center;
+   width: 100%;
+}
+#nav-site{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(240, 233, 233);
+    height: 8vh;
+    grid-area: n;
+    white-space: nowrap;
+}
+#content{
+    background-image: url(../imgs/imgFundo.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 84vh;
+    display: flex;
+}
+.nav-list{
+    display: flex;
+    
+}
+.tituloAreaAluno{
+    margin-left: 360%;
+    margin-top: 3%; 
+}
+
+.tituloAreaAluno:hover{
+    text-decoration: underline;
+}
+.tituloLogin{ 
+    margin-left: 1325%;
+    margin-top: 10%; 
+}
+
+.tituloLogin:hover{
+    text-decoration: underline;
+}
+.tituloRegistro{
+    margin-left: 760%;
+    margin-top: 6%;
+}
+.tituloRegistro:hover{
+    text-decoration: underline;
+}
+.tituloSuporte{
+    margin-left: 980%;
+    margin-top: 7%;
+}
+.tituloSuporte:hover{
+    text-decoration: underline;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+li{
+    list-style-type: none;    
+}
+#foot-content{
+    display: flex;
+    background-color: rgb(230, 223, 223);
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+#searchText{
+    background-color: rgb(151, 112, 189);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    width: 400px;
+    visibility: hidden;
+}
+.inputSearch{
+    background: none;
+    border: none;
+    width: 90%;
+    outline: none;
+}
+.imgLupa{
+    margin-left: 100%;
+}
+.iconeInstagram{
+    margin-left: -80%;
+}
+.iconeFacebook{
+    margin-left: -20%;
+}
+.iconeSuporte{
+    margin-left: 50%;
+    margin-top: 50%;
+}
+#foot-images{
+    justify-content: space-between;
+    display: flex;
+}
+
+.textoMain{
+    color: aliceblue;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-top: 20%;
+    margin-left: 9%;
+    width: 70%;
+}
+.legendaMain{
+    color: aliceblue;
+    font-size: 26px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 9%;
+    width: 70%;
+}
+/*----------------------------------------------------------------PAGINA 2-------------------------------------------------------------------*/
+
+#panel_sec {
+    display: flex; /* Flexbox para organizar os elementos principais */
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 90px; /* Espaçamento entre os elementos principais */
+    margin-top: 40px; /* Espaçamento acima do bloco */
+}
+
+.text_panel {
+    display: flex; /* Flexbox para organizar os elementos internos */
+    flex-direction: column; /* Alinha o texto e botão verticalmente */
+    align-items: center; /* Centraliza o texto e o botão horizontalmente */
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-shadow: rgb(177, 176, 176) 0.1em 0.1em 0.4em;
+    width: 60%; /* Ajusta a largura do texto */
+    text-align: center; /* Centraliza o texto */
+    gap: 20px; /* Espaçamento entre texto e botão */
+    
+}
+
+#btn1 {
+    background-color: rgb(199, 193, 193);
+    color: rgb(0, 0, 0);
+    padding: 40px 20px; /* Maior altura do botão */
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none; /* Remove bordas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 250px; /* Largura fixa */
+    height: 110px; /* Altura fixa para criar o retângulo em pé */  
+    text-align: center;
+    text-decoration: none; /* Remove o underline do texto */
+}
+
+#opcPainel {
+    display: flex; /* Flexbox para alinhar os botões */
+    justify-content: space-between; /* Botões nos extremos */
+    align-items: center;
+    gap: 20px; /* Espaçamento entre os botões */
+    width: 60%; /* Largura do container de botões */
+}
+  
+#btn2, #btn3 {
+    background-color: rgb(199, 193, 193);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none; /* Remove bordas */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 450px; /* Largura fixa */
+    height: 550px; /* Altura fixa para criar o retângulo em pé */
+    display: flex;
+    gap: 90px;
+    flex-direction: column; /* Organiza a imagem e o texto verticalmente */ 
+    align-items: center;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease-out;
+}   
+#btn2:hover {
+    opacity:0.7;
+}
+#btn3:hover{
+    opacity: 0.7; 
+}
+#btn2::before {
+    content: ""; /* Cria o conteúdo antes do texto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* A imagem ocupará 80% da altura do botão */
+    background-image: url('../imgs/imgBt1.jpg'); /* Substitua com o caminho correto da sua imagem */
+    background-size: cover; /* A imagem cobrirá toda a área */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 5px 5px 0 0; /* Borda arredondada na parte superior */
+}
+#btn3::before { 
+    content: ""; /* Cria o conteúdo antes do texto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; /* A imagem ocupará 80% da altura do botão */
+    background-image: url('../imgs/imgBt2.jpg'); /* Substitua com o caminho correto da sua imagem */
+    background-size: cover; /* A imagem cobrirá toda a área */
+    background-position: center; /* Centraliza a imagem */
+    border-radius: 5px 5px 0 0; /* Borda arredondada na parte superior */
+}
+
+#pBt2{
+    margin-top: 105%; 
+}
+
+#pBt3{
+    margin-top: 105%; 
+}
+
+#btn2 {
+    margin-right: auto; /* Posiciona à esquerda */
+}
+
+#btn3 {
+    margin-left: auto; /* Posiciona à direita */
+}
+
+
+/*-----------------RESPONSIVIDADE--------------*/
+
+
+@media (max-width:750px){
+
+    .logo{
+        margin-left: 100%;
+    }
+
+    .tituloRegistro{
+        margin-left: 20%;
+    }
+    .tituloSuporte{
+        margin-left: 50%;
+    }
+
+    .imagem_fundo2{
+        height: 200px;
+        width: 200px;
+        visibility: hidden;
+    }
+    .textoMain{
+        font-size: 40px;
+        width: 100%;
+        
+    }
+    .legendaMain{
+        font-size: 20px;
+    }
+    .text_panel{
+        width: 82%;
+        margin-top: 25%;
+    }
+    button{
+        margin-left: 37%;
+    }
+    #div_img{
+        display: none;
+    }
+    #content{
+        background-position: center;
+    }
+    #foot-content{
+        margin-top: 20%;
+    }
+}

@@ -5,47 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/registro.css">
-    <script src="./main.js"></script>
     <title>Registrar</title>
 </head>
 <body>
     <header>
         <nav>
-            <a class="logo" href="./metis.html"> The Way </a>
-                   <div class="images" href="/">
-                        <ul class = "nav-list">
-                            <li>
-                                <div class = "seta" >
-                                <a href=""> </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <a class="logo" href="./metis.html">The Way</a>
+            <div class="images">
+                <ul class="nav-list">
+                    <li>
+                        <div class="seta">
+                            <a href=""></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
-<div id = "container"> 
-    <main>
-        <div class = "tela">
-                <form id ="form1"action=""> 
-                        <input type="text" placeholder = "Nome" id="lbname" name="fname"><br><br>
-                        <input type="text" placeholder = "E-mail"id="lbemail" name="email"><br><br>
-                        <input type="number" placeholder = "CPF"  max="9" id="lbCPF" name="cpf"><br><br>
-                        <input type="date" placeholder = "dd/mm/aa" id="lbddn" name="ddn"><br><br>
-                        <input type="text" placeholder = "Apelido" id="lbuser" name="username"><br><br>
-                        <input type="password" placeholder = "Senha" id="lbsenha" name="fname"><br><br>
-                        <input type="password" placeholder = "Confirme sua senha" id="fname" name="fname"><br><br>                                   
-                        <input class = "btEnviar" type="submit" value="Cadastrar">
-                        <br><br>
-                        <a class = "a_login" href="./login.html">Já possui uma conta? Entre aqui</a>
-                    </form>
-                </form>           
-        </div>
-    </main>
-</div>
-
-
-
-
-<footer></footer> 
+    <div id="container">
+        <main>
+            <div class="tela">
+                <form id="form1" action="#" method="POST"> 
+                    <h1>Crie sua conta</h1>
+                    <input type="text" placeholder="Nome" id="lbname" name="fname" required>
+                    <input type="email" placeholder="E-mail" id="lbemail" name="email" required>
+                    <input type="text" placeholder="CPF" id="lbCPF" name="cpf" maxlength="11" required>
+                    <input type="date" id="lbddn" name="ddn" required>
+                    <input type="text" placeholder="Apelido" id="lbuser" name="username" required>
+                    <input type="password" placeholder="Senha" id="lbsenha" name="password" required>
+                    <input type="password" placeholder="Confirme sua senha" id="confirmSenha" name="confirmPassword" required>
+                    <button class="btEnviar" type="submit">Cadastrar</button>
+                    <p class="login-link">
+                        Já possui uma conta? <a class="a_login" href="./login.html">Entre aqui</a>
+                    </p>
+                </form>
+            </div>
+        </main>
+    </div> 
+    <footer></footer> 
 </body>
 </html>

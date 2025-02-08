@@ -11,72 +11,42 @@
 
 <header>
     <nav>
-        <a class="logo" href="./metis.html" > The Way </a>
-        <div class="images" href="/">
-            <ul class = "nav-list">
-                <li>
-                    <div class = "seta" >
-                        <a href=""> </a>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <a class="logo" href="./metis.html">The Way</a>
     </nav>
 </header>
 <main>
-<div>
-    <div id = "cont_sup">
-        <div class="figura1">
-            <button>
-                <img src="./imgs/apoio-suporte.png" alt="imgSup_sup">
-                <h1>Suporte Assistencial</h1>
-                <br><br>
-                <a>Ajudas sobre: <br>Sistema, parcerias, duvidas e geral</a>
-            </button>
-        </div>
+<div id="cont_sup">
+    <div class="figura1">
+        <button id="btnAssistencial">
+            <img src="./imgs/apoio-suporte.png" alt="imgSup_sup">
+            <h1>Suporte Assistencial</h1>
+            <a>Ajudas sobre: <br>Sistema, parcerias, dúvidas e geral</a>
+        </button>
+    </div>
 
-        <div class = "figura2">
-            <button>
-                <img src="./imgs/whatsapp.png" alt="imgSup_sup">
-                <h1>Suporte por Whatsapp</h1>
-                <br>
-                <a>Ajudas sobre: <br>Conta, login e reclamações</a> 
-            </button>
-        </div>
+    <div class="figura2">
+        <button id="btnWhatsApp">
+            <img src="./imgs/whatsapp.png" alt="imgSup_sup">
+            <h1>Suporte por WhatsApp</h1>
+            <a>Ajudas sobre: <br>Conta, login e reclamações</a> 
+        </button>
     </div>
 </div>
 </main>
-<footer id = footer>   
-    <ul id="foot-content">
-        <li>
-            <div class = "tituloSobre" >
-                <a href="./sobrenos.html"> Sobre nós </a>
-            </div>  
-        </li>
-        <div id = foot-images>
-        <li>
-                <a href="https://www.instagram.com/metisecure/" target="blank"> 
-                <img class = "iconeInstagram" src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png">
-                </a>
-        </li>
-        <li>
-                <a href="#"> 
-                <img class = "iconeFacebook" src="https://cdn-icons-png.flaticon.com/512/20/20837.png">
-                </a>
-        </li>
-        <li>                     
-                <a href="./suporte.html"> 
-                <img class = "iconeSuporte" src=" https://cdn-icons-png.flaticon.com/512/7145/7145656.png" target="blank">
-                </a>                      
-        </li>
-        </div>
-        <li>
-            <div class = "tituloCeap" >
-                <a href="./suporte.html" target="_blank"> Suporte </a>
-            </div>  
-        </li>
-    </ul>
 
+<div id="modal" class="hidden">
+    <div id="modalContent">
+        <!-- Botão de fechar -->
+        <span id="closeModal">&times;</span>
+        <p>Para suporte, entre em contato pelo número:</p>
+        <h2>(11) 1234-5678</h2>
+    </div>
+</div>
+
+<footer id="footer">   
+    <!-- Conteúdo do footer -->
 </footer>
+
+<script src="./scripts/suporte.js"></script>
 </body>
 </html>
