@@ -34,4 +34,36 @@ function enviarTexto (){
 
 }
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Seleciona o botão de suporte no menu
+    const suporteBotao = document.querySelector(".tituloSuporte a");
+    // Seleciona o modal
+    const modal = document.getElementById("modal");
+    // Seleciona o botão de fechar dentro do modal
+    const closeButton = document.querySelector(".close-button");
+
+    // Função para alternar a visibilidade do modal
+    function toggleModal() {
+        modal.classList.toggle("hidden");
+    }
+
+    // Adiciona evento de clique no botão de suporte para abrir o modal
+    suporteBotao.addEventListener("click", function (event) {
+        event.preventDefault(); // Impede o comportamento padrão do link
+        toggleModal();
+    });
+
+    // Adiciona evento de clique no botão de fechar para esconder o modal
+    closeButton.addEventListener("click", toggleModal);
+
+    // Fecha o modal se o usuário clicar fora do conteúdo
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    });
+});
+
+
 button.addEventListener('click', enviarTexto, true);

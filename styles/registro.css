@@ -5,7 +5,7 @@
 }
 body {
     font-family: Arial, sans-serif;
-    background-image: linear-gradient(to right, rgb(175, 175, 170), rgb(131, 133, 105));
+    background-color: rgb(240, 233, 233);
     color: #333;
     line-height: 1.6;
 }
