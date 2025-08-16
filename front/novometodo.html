@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Método</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f6fb;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header fixo no topo */
+        header {
+            background-color: rgb(240, 233, 233);
+            color: rgb(109, 19, 117);
+            padding: 3vh 34px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            transition: 0.3s;
+            font-size: 16px;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            flex-shrink: 0; /* impede de encolher */
+        }
+
+        .header-btn { 
+            color: rgb(109, 19, 117);
+            border: none;
+            padding: 8px 16px;
+            margin-left: 8px;
+            border-radius: 4px;
+            cursor: pointer; 
+            transition: background 0.2s;
+        }
+        .header-btn:hover {
+            background: #e3e3e3;
+        }
+
+        /* Área central */
+        .main-layout {
+            flex: 1; /* ocupa o espaço restante */
+            display: flex;
+            align-items: center;   /* centraliza verticalmente */
+            justify-content: center; /* centraliza horizontalmente */
+            gap: 40px;
+        }
+        .robot {
+            width: 520px;
+            min-width: 520px;
+            height: auto;
+        }
+        .container {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .question {
+            font-size: 1.2em;
+            margin: 24px 0 16px 0;
+            min-height: 48px;
+            min-height: 60px;
+        }
+        .input-area {
+            margin-bottom: 16px;
+        }
+        button {
+            background: #4f8cff;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:disabled {
+            background: #b3c7f7;
+            cursor: not-allowed;
+        }
+         
+    </style>
+</head>
+<body>
+    <header>
+        <div id = "nameSidePage">novo método</div>
+        <div>
+            <a class="header-btn" onclick="window.location.href='metis.html'">Menu Principal</a>
+            <a class="header-btn" onclick="window.location.href='areadoestudante.html'">Voltar</a>
+        </div>
+    </header>
+    <div class="main-layout">
+        <img class="robot" src="./imgs/imgRobo.png" alt="Robôzinho">
+        <div class="container">
+            <div class="question" id="question">
+                Olá! Eu sou o Elevia e estou aqui para te ajudar com seu método de estudo. Pronto para começar o quiz? Clique no botão abaixo!
+            </div>
+            <div class="input-area" id="input-area" style="display:none;">
+                <input type="text" id="answer" placeholder="Digite sua resposta aqui..." style="width:90%;padding:8px;">
+            </div>
+            <button id="start-btn">Começar</button>
+            <button id="next-btn" style="display:none;">Próxima</button>
+        </div>
+    </div>
+
+    <script>
+        const perguntas = [
+            "Quando você está aprendendo algo novo, prefere assistir a um vídeo explicativo ou ler um texto?",
+            "Quando está tentando lembrar de algo, você imagina imagens ou repete as palavras mentalmente?",
+            "Você prefere participar de debates e explicar o conteúdo em voz alta para aprender melhor?",
+            "Quando estuda, costuma fazer anotações detalhadas ou criar resumos escritos?",
+            "Aprende melhor quando realiza atividades práticas ou experimentos?",
+            "Quando recebe instruções, prefere que sejam escritas ou que alguém explique oralmente?",
+            "Você costuma usar post-its, diagramas ou mapas mentais para organizar ideias?",
+            "Quando está estudando, gosta de ouvir áudios, podcasts ou gravações de aula?",
+            "Prefere ler o material por conta própria antes de qualquer explicação oral?",
+            "Você memoriza melhor informações associando-as a cores, formas ou imagens?",
+            "Quando revisa o conteúdo, prefere escrever novamente ou contar para outra pessoa?",
+            "Você se lembra mais facilmente do que viu em um vídeo do que do que ouviu em uma explicação?",
+            "Gosta de repetir o conteúdo em voz alta ou gravar sua própria explicação para ouvir depois?",
+            "Prefere aprender fazendo exercícios práticos, experimentos ou atividades físicas?",
+            "Quando recebe novas informações, prefere vê-las organizadas em tabelas, gráficos ou esquemas?"
+        ];
+
+        let perguntasSelecionadas = [];
+        let respostas = [];
+        let indice = 0;
+
+        const questionEl = document.getElementById('question');
+        const inputAreaEl = document.getElementById('input-area');
+        const answerEl = document.getElementById('answer');
+        const startBtn = document.getElementById('start-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        function embaralhar(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        startBtn.onclick = function() {
+            perguntasSelecionadas = embaralhar([...perguntas]).slice(0, 10);
+            indice = 0;
+            respostas = [];
+            startBtn.style.display = 'none';
+            inputAreaEl.style.display = '';
+            nextBtn.style.display = '';
+            mostrarPerguntaAnimada(`Elevia pergunta: ${perguntasSelecionadas[indice]}`);
+        };
+
+        nextBtn.onclick = function() {
+            respostas.push(answerEl.value);
+            answerEl.value = '';
+            indice++;
+            if (indice < perguntasSelecionadas.length) {
+                mostrarPerguntaAnimada(`Elevia pergunta: ${perguntasSelecionadas[indice]}`);
+            } else {
+                finalizarQuiz();
+            }
+        };
+
+        function mostrarPerguntaAnimada(texto) {
+            questionEl.textContent = "";
+            let i = 0;
+            nextBtn.disabled = true;
+            answerEl.disabled = true;
+            function escrever() {
+                if (i < texto.length) {
+                    questionEl.textContent += texto[i];
+                    i++;
+                    setTimeout(escrever, 30);
+                } else {
+                    nextBtn.disabled = false;
+                    answerEl.disabled = false;
+                    answerEl.focus();
+                }
+            }
+            escrever();
+        }
+
+        function finalizarQuiz() {
+            mostrarPerguntaAnimada("Parabéns! Você terminou o quiz. Obrigado por participar!");
+            inputAreaEl.style.display = 'none';
+            nextBtn.style.display = 'none';
+        }
+    </script>
+</body>
+</html>

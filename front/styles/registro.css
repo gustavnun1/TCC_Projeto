@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(240, 233, 233);
+    color: #333;
+    line-height: 1.6;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(224, 221, 224);
+    height: 7vh;
+}
+.logo {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 93vh;
+}
+.tela {
+    background: #fff;
+    padding: 20px 30px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(131, 133, 105);
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #f8f6f6; 
+    font-size: 16px;
+}
+input:focus {
+    border-color: rgb(131, 133, 105);
+    outline: none;
+    box-shadow: 0 0 5px rgba(131, 133, 105, 0.5);
+}
+.btEnviar {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(187, 189, 186);
+    border: none; 
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btEnviar:hover {
+    background: rgb(143, 146, 96);
+}
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+.login-link a {
+    color: rgb(131, 133, 105);
+    text-decoration: none;
+    font-weight: bold;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}

@@ -42,9 +42,13 @@ ul {
     flex-flow: row wrap;
 }
 
-body {
-    background-image: linear-gradient(to right, rgb(175, 175, 170), rgb(131, 133, 105));
-    font-family: sans-serif;
+body {  
+    background-image: url('../imgs/imgSupport.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;  
+    background-repeat: no-repeat; 
+    font-family: sans-serif;  
 }
 
 li {
